@@ -7,8 +7,17 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap" rel="stylesheet">
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <!-- Nav CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,10 +29,32 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span>TWEETER</span>
     </nav>
 
+    <!-- Header with username and picture  -->
+    <header>
+      <div>
+          <img id="avatar" src="/images/profile-hex.png"> 
+      </div>
+      <div>
+          <h2>Melis Cagan</h2>
+      </div>
+  </header>
+
+  <br>
+
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form>
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <button type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
