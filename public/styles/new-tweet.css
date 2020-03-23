@@ -1,0 +1,31 @@
+.new-tweet {
+  border: 5px solid grey;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.tweet-submit {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+}
+
+.tweet-submit button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+
+#tweet-text {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: solid grey;
+  width: 100%;
+  background-color: #f4f1ec;
+}
+
+h2 {
+  font-size: x-large;
+  color: grey;
+  align-self: flex-start;
+}
