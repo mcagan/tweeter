@@ -5,6 +5,8 @@ $(document).ready(function() {
     console.log(remainingChars);
     if (remainingChars < 0) {
       $('.counter').css('color', 'red');
+    } else {
+      $('.counter').css('color', 'black');
     }
     $('.counter').text(remainingChars);
   });
