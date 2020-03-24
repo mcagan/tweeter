@@ -22,6 +22,9 @@
     <!-- New Tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <!-- Tweets CSS -->
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -49,7 +52,7 @@
   <br>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main class="new-tweet">
       <section class="new-tweet">
         <h2>What are you humming about?</h2>
         <form method="POST" action="/tweets" Content-Type="application/x-www-form-urlencoded">
@@ -63,7 +66,10 @@
     </main>
     <main class="container">
       <article class="tweet">
-        <header>Newton</header>
+        <header>
+          <p>Newton</p>
+          <a>@SirIsaac</a>
+          </header>
         <p>If I have seen further it is by standing on the shoulders of giants</p>
         <footer>10 days ago</footer>
       </article>

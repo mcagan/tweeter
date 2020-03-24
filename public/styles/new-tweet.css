@@ -1,9 +1,3 @@
-.new-tweet {
-  border: 5px solid grey;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
-}
 
 .tweet-submit {
   display: flex;

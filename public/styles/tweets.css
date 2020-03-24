@@ -1,0 +1,33 @@
+.tweet {
+  border: 5px solid grey;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.tweet > header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet > header a {
+  display: none;
+}
+
+.tweet:hover > header a {
+  display: block;
+}
+
+.tweet:hover {
+  font-weight: bolder;
+  box-shadow: 5px 10px;
+  display: block;
+}
+
+.tweet > p {
+  font-weight: bold;
+}
+
+.tweet > footer {
+  font-size: small;
+}
