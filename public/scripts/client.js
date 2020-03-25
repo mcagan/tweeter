@@ -89,7 +89,7 @@ $(document).ready(function() {
           .always(function() {
             console.log("request completed");
           });
-      }, 1000);
+      }, 50);
     }
   });
 
