@@ -9,6 +9,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -36,7 +37,8 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>TWEETER</span>
+      <span class="logo">TWEETER</span>
+      <span>Write a tweet</span>
     </nav>
 
     <!-- Header with username and picture  -->
@@ -67,11 +69,23 @@
     <main class="container">
       <article class="tweet">
         <header>
-          <p>Newton</p>
+          <div>
+            <img id="avatar" src="/images/newton-avatar.png"> 
+            <span>Newton</span>
+        </div>
           <a>@SirIsaac</a>
           </header>
         <p>If I have seen further it is by standing on the shoulders of giants</p>
-        <footer>10 days ago</footer>
+        <footer>
+          <div>
+            <span class="posted-on">10 days ago</span>
+          </div>
+          <div>
+            <span class="material-icons">flag</span>
+            <span class="material-icons">repeat</span>
+            <span class="material-icons">favorite</span>
+          </div>
+        </footer>
       </article>
     </main>
   </body>

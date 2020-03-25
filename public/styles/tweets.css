@@ -14,8 +14,19 @@
   display: none;
 }
 
+.tweet > header div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tweet > header img {
+  width: 40px;
+  height: auto;
+}
+
 .tweet:hover > header a {
   display: block;
+  color: #0000ed;
 }
 
 .tweet:hover {
@@ -26,8 +37,11 @@
 
 .tweet > p {
   font-weight: bold;
+  border-bottom: solid 2px grey;
 }
 
 .tweet > footer {
   font-size: small;
+  display: flex;
+  justify-content: space-between;
 }
