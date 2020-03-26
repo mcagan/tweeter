@@ -27,7 +27,7 @@ $(document).ready(function() {
     const $footer = $("<footer>");
     $("<span>")
       .addClass("posted-on")
-      .text(tweetObj.created_at)
+      .text(moment(tweetObj.created_at).fromNow())
       .appendTo($footer);
     const $icons = $("<div>").addClass("icons");
     $("<span>")
@@ -85,6 +85,7 @@ $(document).ready(function() {
     } else {
       $.ajax({ method: "POST", url: "/tweets", data })
         .done(function(result) {
+          $("#tweet-text").val("");
           loadtweets(result);
         })
         .fail(function(error) {

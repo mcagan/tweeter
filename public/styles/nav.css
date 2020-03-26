@@ -3,10 +3,10 @@ nav {
   width: 100%;
   background-color: coral;
   color: #ffffff;
-  padding: 1.5em;
   z-index: 9999;
   display: flex;
   justify-content: space-between;
+  padding: 1.5em;
 }
 
 span.logo {
@@ -16,6 +16,10 @@ span.logo {
 
 span.submit-button:hover {
   font-weight: bolder;
+}
+
+span.submit-button {
+  text-decoration: underline;
 }
 
 @media (min-width: 1024px) {
