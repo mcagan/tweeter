@@ -21,21 +21,23 @@ body {
   background-color: #f4f1ec;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+.dot {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+  font-size: xx-large;
+  color: white;
+  font-weight: bold;
+  margin: 1em;
+  margin-left: 90%;
+}
 
-@media (min-width: 1024px) {
-  body > header {
-    width: 100%;
-  }
-  body > main {
-    width: 100%;
-  }
+.dot:hover {
+  color: blue;
 }
