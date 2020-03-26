@@ -9,7 +9,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   const id = "#go-top";
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 200) {
       // 300px from top
       $(id).fadeIn();
     } else {

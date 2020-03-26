@@ -1,7 +1,7 @@
 nav {
   height: 120px;
   width: 100%;
-  background-color: #4056a1;
+  background-color: coral;
   color: #ffffff;
   padding: 1.5em;
   z-index: 9999;
@@ -16,4 +16,10 @@ span.logo {
 
 span.submit-button:hover {
   font-weight: bolder;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    margin-bottom: 3em;
+  }
 }

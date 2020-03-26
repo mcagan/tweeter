@@ -23,21 +23,47 @@ body {
   font-size: 24px;
 }
 
+#header-main {
+  display: flex;
+  flex-direction: column;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 .dot {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
   background-color: red;
   font-size: xx-large;
   color: white;
   font-weight: bold;
   margin: 1em;
-  margin-left: 90%;
+  position: fixed;
+  bottom: 0px;
+}
+
+@media (max-width: 1023px) {
+  body {
+    font-size: 30px;
+  }
+  .dot {
+    left: 80%;
+  }
 }
 
 .dot:hover {
-  color: blue;
+  color: grey;
+}
+
+@media (min-width: 1024px) {
+  #header-main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .dot {
+    left: 90%;
+  }
 }
