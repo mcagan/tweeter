@@ -21,28 +21,21 @@ body {
   background-color: #f4f1ec;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
-}
-
-main.new-tweet {
-  width: 90%;
-  background-color: #f4f1ec;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5px;
-  border: none;
-  padding: 1em;
-  margin-bottom: 15px;
-}
-
-main.container {
-  width: 90%;
-  background-color: #f4f1ec;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5px;
-  margin-bottom: 15px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+@media (min-width: 1024px) {
+  body > header {
+    width: 100%;
+  }
+  body > main {
+    width: 100%;
+  }
+}

@@ -5,6 +5,7 @@
  */
 $(document).ready(function() {
   console.log("DOM ready");
+  $("#new-tweet").slideUp();
 
   const createTweetElement = function(tweetObj) {
     const $postArticle = $("<article>").addClass("tweet");

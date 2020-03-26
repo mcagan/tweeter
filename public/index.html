@@ -45,13 +45,20 @@
       type="text/javascript"
       src="/scripts/composer-char-counter.js"
     ></script>
+    <script>
+      $(document).ready(function() {
+        $("#write-tweet").click(function() {
+          $("#new-tweet").slideToggle();
+        });
+      });
+    </script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="logo">TWEETER</span>
-      <span class="submit-button">Write a tweet</span>
+      <span class="submit-button" id="write-tweet">Write a tweet</span>
     </nav>
 
     <!-- Header with username and picture  -->
@@ -64,11 +71,9 @@
       </div>
     </header>
 
-    <br />
-
     <!-- Page-specific (main) content here -->
-    <main class="new-tweet">
-      <section class="new-tweet">
+    <main class="container">
+      <section class="new-tweet" id="new-tweet">
         <h3 id="error"></h3>
         <h2>What are you humming about?</h2>
         <form
@@ -88,7 +93,7 @@
           </div>
         </form>
       </section>
+      <section class="container" id="tweets-container"></section>
     </main>
-    <main class="container" id="tweets-container"></main>
   </body>
 </html>

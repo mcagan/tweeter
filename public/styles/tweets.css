@@ -1,3 +1,12 @@
+#tweets-container {
+  width: 90%;
+  background-color: #f4f1ec;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  margin-bottom: 15px;
+}
+
 .tweet {
   border: 5px solid grey;
   margin-left: auto;
@@ -17,7 +26,7 @@
 
 .tweet > header div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .tweet > header img {
