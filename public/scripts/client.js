@@ -56,6 +56,22 @@ $(document).ready(function() {
     }
   };
 
+  let loadtweets = () => {
+    $.ajax({ method: "GET", url: "/tweets" })
+      .done(function(result) {
+        $("#tweets-container").empty();
+        renderTweets(result);
+      })
+      .fail(function(error) {
+        console.log(`Error with the request: ${error.message}`);
+      })
+      .always(function() {
+        console.log("request completed");
+      });
+  };
+
+  loadtweets();
+
   $("#submit").submit(function(event) {
     event.preventDefault();
     $("#error").empty();
@@ -68,18 +84,7 @@ $(document).ready(function() {
     } else {
       $.ajax({ method: "POST", url: "/tweets", data })
         .done(function(result) {
-          console.log(result);
-          $.ajax({ method: "GET", url: "/tweets" })
-            .done(function(result) {
-              $("#tweets-container").empty();
-              renderTweets(result);
-            })
-            .fail(function(error) {
-              console.log(`Error with the request: ${error.message}`);
-            })
-            .always(function() {
-              console.log("request completed");
-            });
+          loadtweets(result);
         })
         .fail(function(error) {
           // Problem with the request
