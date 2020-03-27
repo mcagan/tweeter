@@ -15,17 +15,15 @@
   margin-bottom: 20px;
 }
 
+.tweet:hover {
+  font-weight: bolder;
+  box-shadow: 5px 10px;
+  display: block;
+}
+
 .tweet > header {
   display: flex;
   justify-content: space-between;
-}
-
-.tweet > header a {
-  display: none;
-}
-
-.tweet div.icons {
-  display: none;
 }
 
 .tweet > header div {
@@ -38,15 +36,17 @@
   height: auto;
 }
 
+.tweet > header a {
+  display: none;
+}
+
 .tweet:hover > header a {
   display: block;
   color: #7e7198;
 }
 
-.tweet:hover {
-  font-weight: bolder;
-  box-shadow: 5px 10px;
-  display: block;
+.tweet div.icons {
+  display: none;
 }
 
 .tweet:hover div.icons {
