@@ -24,6 +24,10 @@
   display: none;
 }
 
+.tweet div.icons {
+  display: none;
+}
+
 .tweet > header div {
   display: flex;
   justify-content: space-between;
@@ -42,6 +46,10 @@
 .tweet:hover {
   font-weight: bolder;
   box-shadow: 5px 10px;
+  display: block;
+}
+
+.tweet:hover div.icons {
   display: block;
 }
 
